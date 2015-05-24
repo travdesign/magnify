@@ -13,6 +13,33 @@
   position: relative;
 }
 
+
+.magnify2 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+
+.magnify3 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.magnify4 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.magnify5 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+
 /*Lets create the magnifying glass*/
 
 .large {
@@ -41,26 +68,94 @@
   display: none;
 }
 
+.large3 {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art3.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+}
+
+.large4 {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art4.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+}
+
+.large5{
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art5.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+}
+
+
+
 
 /*To solve overlap bug at the edges during magnification*/
 
 .small { display: block; }
-
 .small2 { display: block; }
+.small3 { display: block; }
+.small4 { display: block; }
+.small5 { display: block; }
+
+/*Text divs float right*/
+
+.text{
+
+  float: right;
+  padding: 35px;
+  font-size: 
+}
+h1 
+{font-family: 'Pinyon Script', cursive;
+font-size: 42px;
+color:#B20000;
+}
+
+
+
+
+
+
+h2{
+
+  font-family: sans-serif;
+  font-size: 10pt;
+  font-weight: 300;
+  text-align: right;
+}
+
 </style>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <!-- Lets make a simple image magnifier -->
-<title>Minimal Circular Image Magnifier Demo</title>
-<div id="jquery-script-menu">
-<div class="jquery-script-center">
-<ul>
-<li><a href="http://www.jqueryscript.net/zoom/Minimal-Circular-Image-Magnifier-with-jQuery-CSS3.html">Download This Plugin</a></li>
-<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
-</ul>
+<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+<title>Travis Stackpole</title>
 
-</div>
-</div>
-<h1 align="center" style="margin-top:150px;">Minimal Circular Image Magnifier Demo</h1>
+<h1 align="center" style="margin-top:150px;">Travis Stackpole Fordham Thesis 2015</h1>
+
+<div class="text">
+  <h2> Kitana<br>Tothbrush<br>Edie prints on media<br>Por. of Alice Glass<br></div><h2>
+
 <div class="magnify"> 
   
   <!-- This is the magnifying glass which will contain the original/large version -->
@@ -68,14 +163,44 @@
   
   <!-- This is the small image --> 
   <img class="small" src="art.jpg" width="500"/> </div>
+<div class="text">
 
-  <div class="magnify"> 
-  
-  <!-- This is the magnifying glass which will contain the original/large version -->
+  <h2> Por. of John Stewart<br>Por. of John Burris<br>Police brutality prints<br>Workers rights painting<br><br></div><h2>
+ 
+  <div class="magnify2"> 
   <div class="large2"></div>
-  
-  <!-- This is the small image --> 
   <img class="small2" src="art2.jpg" width="500"/> </div>
+
+  <div class="text">
+
+  <h2> Por. of John Stewart<br>Por. of John Burris<br>Police brutality prints<br>Workers rights painting<br><br></div><h2>
+
+   <div class="magnify5"> 
+  <div class="large5"></div>
+  <img class="small5" src="art5.jpg" width="500"/> </div>
+
+
+<div class="text">
+
+  <h2> Street Fashion Lightbox<br>Synthesizer print(MS-20)<br>Alice Glass painting/photography<br>Workers rights painting<br><br></div><h2>
+
+    <div class="magnify3"> 
+    <div class="large3"></div>
+    <img class="small3" src="art3.jpg" width="500"/> </div>
+
+<div class="text">
+
+  <h2> Por. of John Stewart<br>Por of John Burris<br>Police brutality prints<br>Workers rights painting<br><br></div><h2>
+
+ <div class="magnify4"> 
+ <div class="large4"></div>
+ <img class="small4" src="art4.jpg" width="500"/> </div>
+
+
+
+
+ 
+
 
 
 <!-- You can download it from http://leaverou.github.com/prefixfree/ --> 
