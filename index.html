@@ -7,6 +7,25 @@
   padding: 0;
 }
 
+
+
+
+
+.header {
+
+  width: 100%;
+  height: 30px;
+ 
+  background-color: red;
+  position: fixed;
+ 
+ 
+  z-index: 2;
+  margin-top: 0;
+
+}
+
+
 .magnify {
   width: 500px;
   margin: 50px auto;
@@ -107,7 +126,34 @@
   display: none;
 }
 
+#navigation {
+    text-align: justify;
+}
 
+#navigation ul span {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+#navigation ul {
+    display: inline;
+    list-style: none;
+}
+
+#navigation ul li {
+    display: inline
+}
+
+#navigation ul li a {
+    display: inline; 
+  ;
+}
+
+#navigation ul li.last a {
+    border-right: none;
+}
 
 
 /*To solve overlap bug at the edges during magnification*/
@@ -118,12 +164,22 @@
 .small4 { display: block; }
 .small5 { display: block; }
 
-/*Text divs float right*/
+     /*Text divs float right*/
 
-.text{
+
+
+ .textheader {
+  
+    
+
+ }
+
+.texttitle{
 
   float: right;
-  padding: 35px;
+  padding-top: 100px;
+  padding-right: 35px;
+
   font-size: 
 }
 h1 
@@ -132,9 +188,39 @@ font-size: 42px;
 color:#B20000;
 }
 
+.text1 {
+
+  float: right;
+  padding: 60px;
+  font-size: 
+}
+
+.text{
+
+  float: right;
+  padding: 35px;
+  font-size: 
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 
+
+}
+h1 
+{font-family: 'Pinyon Script', cursive;
+font-size: 42px;
+color:#B20000;
+padding: 0;
+}
 
 
 h2{
@@ -145,15 +231,52 @@ h2{
   text-align: right;
 }
 
+
 </style>
+
+
+  <title>Travis Stackpole</title>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <!-- Lets make a simple image magnifier -->
 <link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+</head>
+
+
+<div class=header> 
+<div id="navigation">
+  <ul>
+    <li class="first">
+      <a href="#" title="Home Page">Home</a>
+    </li>
+    <li>
+      <a href="#">About&ensp;us</a>
+    </li>
+    <li>
+      <a href="#">What&ensp;we&ensp;cover</a>
+    </li>
+    <li>
+      <a href="#">Monitoring&ensp;agencies</a>
+    </li>
+    <li>
+      <a href="#">Publishers</a>
+    </li>
+    <li>
+      <a href="#">News</a>
+    </li>
+    <li>
+      <a href="#">Contact&ensp;us</a>
+    </li>
+  <span></span>
+</ul>
+</div>
+ </div> 
+
+
 <title>Travis Stackpole</title>
 
-<h1 align="center" style="margin-top:150px;">Travis Stackpole Fordham Thesis 2015</h1>
+<h1 align="center"><br>Travis Stackpole Fordham Thesis 2015</h1>
 
-<div class="text">
+<div class="text1">
   <h2> Kitana<br>Tothbrush<br>Edie prints on media<br>Por. of Alice Glass<br></div><h2>
 
 <div class="magnify"> 
@@ -182,7 +305,7 @@ h2{
 
 <div class="text">
 
-  <h2> Street Fashion Lightbox<br>Synthesizer print(MS-20)<br>Alice Glass painting/photography<br>Workers rights painting<br><br></div><h2>
+  <h2> Street Fashion Lightbox<br>Synthesizer print(MS-20)<br>Alice Glass painting/photography<br><br><br></div><h2>
 
     <div class="magnify3"> 
     <div class="large3"></div>
@@ -190,7 +313,7 @@ h2{
 
 <div class="text">
 
-  <h2> Por. of John Stewart<br>Por of John Burris<br>Police brutality prints<br>Workers rights painting<br><br></div><h2>
+  <h2> Lack of Light series</div><h2>
 
  <div class="magnify4"> 
  <div class="large4"></div>
