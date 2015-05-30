@@ -1,0 +1,409 @@
+<style>
+/*Some CSS*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+
+
+.header {
+
+  width: 100%;
+  height: 30px;
+ 
+  background-color: white;
+  position: fixed;
+ 
+ 
+  z-index: 2;
+  margin-top: 0;
+  box-shadow: 0 4px 4px -2px #d3d3d3;
+    -moz-box-shadow: 0 4px 4px -2px #d3d3d3;
+    -webkit-box-shadow: 0 4px 4px -2px #d3d3d3;
+
+}
+
+
+.magnify {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+  cursor: crosshair;
+}
+
+
+.magnify2 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+
+.magnify3 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.magnify4 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.magnify5 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.magnify6 {
+  width: 500px;
+  margin: 50px auto;
+  position: relative;
+}
+
+
+
+/*Lets create the magnifying glass*/
+
+.large {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art/lackoflightsq.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+  cursor: crosshair;
+}
+
+.large2 {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art/lackoflightbet.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+  cursor: crosshair;
+}
+
+.large3 {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art/edieclean.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+  cursor: crosshair;
+}
+
+.large4 {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art/ediemess.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+}
+
+.large5{
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art/sola.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+}
+
+.large6{
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 100%;
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),  0 0 7px 7px rgba(0, 0, 0, 0.25),  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /*Lets load up the large image first*/
+  background: url('art/aliceface.jpg') no-repeat;
+  /*hide the glass by default*/
+  display: none;
+}
+
+
+
+#navigation {
+    text-align: justify;
+}
+
+#navigation ul span {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+#navigation ul {
+    display: inline;
+    list-style: none;
+}
+
+#navigation ul li {
+    display: inline
+}
+
+#navigation ul li a {
+    display: inline; 
+  ;
+}
+
+#navigation ul li.last a {
+    border-right: none;
+}
+
+
+/*To solve overlap bug at the edges during magnification*/
+
+.small { display: block; 
+cursor: crosshair;}
+.small2 { display: block; }
+.small3 { display: block; }
+.small4 { display: block; }
+.small5 { display: block; }
+.small5 { display: block; }
+
+     /*Text divs float right*/
+
+
+
+ .textheader {
+  
+    
+
+ }
+
+.texttitle{
+
+  float: right;
+  padding-top: 100px;
+  padding-right: 35px;
+
+  font-size: 
+}
+h1 
+{font-family: 'Pinyon Script', cursive;
+font-size: 42px;
+color:#B20000;
+}
+
+.text1 {
+
+  float: right;
+  padding: 60px;
+  font-size: 
+}
+
+.text{
+
+  float: right;
+  padding: 35px;
+  font-size: 
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+}
+h1 
+{font-family: 'Pinyon Script', cursive;
+font-size: 42px;
+color:#B20000;
+padding: 0;
+}
+
+
+h2{
+
+  font-family: sans-serif;
+  font-size: 10pt;
+  font-weight: 300;
+  text-align: right;
+}
+
+h3 {
+
+
+  font background-size: 14pt;
+  color: black;
+  font-family: sans-serif;;
+  font-weight: 300;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+</style>
+
+
+  <title>Travis Stackpole</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<!-- Lets make a simple image magnifier -->
+<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+</head>
+
+<h3>
+<div class=header> 
+<div id="navigation">
+  <ul>
+    <li class="first">
+      <a href="#" title="Home Page">&ensp;&ensp;Home</a>
+    </li>
+    <li>
+      <a href="#">About&ensp;us</a>
+    </li>
+    <li>
+      <a href="works>works</a>
+    </li>
+    <li>
+      <a href="#">Fine&ensp;Art</a>
+    </li>
+    <li>
+      <a href="#">Design&ensp;and&ensp;Branding</a>
+    </li>
+    <li>
+      <a href="#">News</a>
+    </li>
+    <li>
+      <a href="#">Contact&ensp;&ensp;</a>
+    </li>
+  <span></span>
+</ul>
+</div>
+ </div> 
+</h3>
+
+
+<br><br><br><br><br>
+<center><a href="index.html">Gallery View</a></center>
+
+
+
+
+
+
+<h1 align="center"><br>Travis Stackpole Senior Showcase 2015</h1>
+
+<div class="text1">
+  <h2>Lack of Light#2<br>acrylic, silkscreen, tape on canvas<br>2014 NYC</div><h2>
+
+<div class="magnify"> 
+  
+  <!-- This is the magnifying glass which will contain the original/large version -->
+  <div class="large"></div>
+  
+  <!-- This is the small image --> 
+  <img class="small" src="art/lackoflightsq.jpg" width="500"/> </div>
+<div class="text">
+
+  <h2> Lack of Light#1<br>Silkscreen, acrylic, newspaper,<br>burnt matter on canvas<br>2014 NYC</div><h2>
+ 
+  <div class="magnify2"> 
+  <div class="large2"></div>
+  <img class="small2" src="art/lackoflightbet.jpg" width="500"/> </div>
+
+  <div class="text">
+
+  <h2>Portait of Sola Augston <br>at Armory Art Fair<br>
+    Acrylic, marker, cloth, <br>paper, photograph, plastic <br>18x24in<br></div><h2>
+
+   <div class="magnify5"> 
+  <div class="large5"></div>
+  <img class="small5" src="art/sola.jpg" width="500"/> </div>
+
+
+<div class="text">
+
+  <h2> American Girl<br>Silkscreen on Canvas<br>14x14in</div><h2>
+
+    <div class="magnify3"> 
+    <div class="large3"></div>
+    <img class="small3" src="art/edieclean.jpg" width="500"/> </div>
+
+<div class="text">
+
+  <h2> Lack of Light series</div><h2>
+
+ <div class="magnify4"> 
+ <div class="large4"></div>
+ <img class="small4" src="art/ediemess.jpg" width="500"/> </div>
+
+
+<div class="text">
+
+  <h2> Por. of John Stewart<br>Por. of John Burris<br>Police brutality prints<br>Workers rights painting<br><br></div><h2>
+
+   <div class="magnify6"> 
+  <div class="large6"></div>
+  <img class="small6" src="art/aliceface.jpg" width="500"/> </div>
+
+ 
+
+
+
+<!-- You can download it from http://leaverou.github.com/prefixfree/ --> 
+
+<!-- Time for jquery action --> 
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- Time for make it roll --> 
+<script src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
